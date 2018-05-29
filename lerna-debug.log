@@ -9,13 +9,91 @@
 8 info current version 0.0.0
 9 silly isDetachedHead
 10 silly getCurrentBranch
-11 error initialize caught error
-12 error Error: fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.
-12 error Use '--' to separate paths from revisions, like this:
-12 error 'git <command> [<revision>...] -- [<file>...]'
-12 error
-12 error     at Function.module.exports.sync (C:\Users\dell\AppData\Roaming\npm\node_modules\lerna\node_modules\execa\index.js:303:26)
-12 error     at Function.execSync (C:\Users\dell\AppData\Roaming\npm\node_modules\lerna\lib\ChildProcessUtilities.js:59:30)
-12 error     at Function.getCurrentBranch (C:\Users\dell\AppData\Roaming\npm\node_modules\lerna\lib\GitUtilities.js:202:59)
-12 error     at Function.isDetachedHead (C:\Users\dell\AppData\Roaming\npm\node_modules\lerna\lib\GitUtilities.js:45:37)
-12 error     at PublishCommand.initialize (C:\Users\dell\AppData\Roaming\npm\node_modules\lerna\lib\commands\PublishCommand.js:260:36)
+11 verbose getCurrentBranch master
+12 verbose isDetachedHead false
+13 silly getCurrentBranch
+14 verbose getCurrentBranch master
+15 silly getUpdates
+16 info Checking for updated packages...
+17 silly hasTags
+18 verbose hasTags false
+19 info Comparing with initial commit.
+20 verbose updated lerna-plugin-logs
+21 info Checking for prereleased packages...
+22 silly collectDependents
+23 silly isPackageDependentOf lerna-plugin-logs lerna-plugin-logs
+24 silly collectUpdates
+25 verbose has filtered update lerna-plugin-logs
+26 silly initialize success
+27 silly execute attempt
+28 silly addFile D:\workplace\react-package\lerna.json
+29 silly runScriptSync preversion test-react-package
+30 silly runScriptSync preversion lerna-plugin-logs
+31 silly runScriptSync version lerna-plugin-logs
+32 silly runScriptSync version test-react-package
+33 silly addFile D:\workplace\react-package\packages\lerna-plugin-logs\package.json
+34 silly commit v1.0.0-0
+35 verbose commit [ 'commit', '--no-verify', '-m', 'v1.0.0-0' ]
+36 silly addTag v1.0.0-0
+37 silly runScriptSync postversion lerna-plugin-logs
+38 silly runScriptSync postversion test-react-package
+39 info publish Publishing packages to npm...
+40 silly existsSync D:\workplace\react-package\packages\lerna-plugin-logs\scripts\prepublish.js
+41 verbose execScript No prepublish script found at D:\workplace\react-package\packages\lerna-plugin-logs\scripts\prepublish.js
+42 verbose publishing lerna-plugin-logs
+43 silly publishTaggedInDir latest lerna-plugin-logs
+44 silly getExecOpts { cwd: 'D:\\workplace\\react-package\\packages\\lerna-plugin-logs' }
+45 error publish Retrying failed publish: lerna-plugin-logs
+46 verbose publish error undefined
+47 verbose publishing lerna-plugin-logs
+48 silly publishTaggedInDir latest lerna-plugin-logs
+49 silly getExecOpts { cwd: 'D:\\workplace\\react-package\\packages\\lerna-plugin-logs' }
+50 error publish Retrying failed publish: lerna-plugin-logs
+51 verbose publish error undefined
+52 verbose publishing lerna-plugin-logs
+53 silly publishTaggedInDir latest lerna-plugin-logs
+54 silly getExecOpts { cwd: 'D:\\workplace\\react-package\\packages\\lerna-plugin-logs' }
+55 error publish Retrying failed publish: lerna-plugin-logs
+56 verbose publish error undefined
+57 verbose publishing lerna-plugin-logs
+58 silly publishTaggedInDir latest lerna-plugin-logs
+59 silly getExecOpts { cwd: 'D:\\workplace\\react-package\\packages\\lerna-plugin-logs' }
+60 error publish Retrying failed publish: lerna-plugin-logs
+61 verbose publish error undefined
+62 verbose publishing lerna-plugin-logs
+63 silly publishTaggedInDir latest lerna-plugin-logs
+64 silly getExecOpts { cwd: 'D:\\workplace\\react-package\\packages\\lerna-plugin-logs' }
+65 error publish Ran out of retries while publishing lerna-plugin-logs Error: Command failed: npm publish --tag latest
+65 error publish npm ERR! publish Failed PUT 404
+65 error publish npm ERR! code E404
+65 error publish npm ERR! 404 User not found : lerna-plugin-logs
+65 error publish npm ERR! 404
+65 error publish npm ERR! 404  'lerna-plugin-logs' is not in the npm registry.
+65 error publish npm ERR! 404 You should bug the author to publish it (or use the name yourself!)
+65 error publish npm ERR! 404
+65 error publish npm ERR! 404 Note that you can also install from a
+65 error publish npm ERR! 404 tarball, folder, http url, or git url.
+65 error publish
+65 error publish npm ERR! A complete log of this run can be found in:
+65 error publish npm ERR!     C:\Users\dell\AppData\Roaming\npm-cache\_logs\2018-05-29T02_11_25_311Z-debug.log
+65 error publish
+65 error publish     at Promise.all.then.arr (C:\Users\dell\AppData\Roaming\npm\node_modules\lerna\node_modules\execa\index.js:236:11)
+65 error publish     at <anonymous>
+65 error publish     at process._tickCallback (internal/process/next_tick.js:182:7)
+66 error execute callback with error
+67 error Error: Command failed: npm publish --tag latest
+67 error npm ERR! publish Failed PUT 404
+67 error npm ERR! code E404
+67 error npm ERR! 404 User not found : lerna-plugin-logs
+67 error npm ERR! 404
+67 error npm ERR! 404  'lerna-plugin-logs' is not in the npm registry.
+67 error npm ERR! 404 You should bug the author to publish it (or use the name yourself!)
+67 error npm ERR! 404
+67 error npm ERR! 404 Note that you can also install from a
+67 error npm ERR! 404 tarball, folder, http url, or git url.
+67 error
+67 error npm ERR! A complete log of this run can be found in:
+67 error npm ERR!     C:\Users\dell\AppData\Roaming\npm-cache\_logs\2018-05-29T02_11_25_311Z-debug.log
+67 error
+67 error     at Promise.all.then.arr (C:\Users\dell\AppData\Roaming\npm\node_modules\lerna\node_modules\execa\index.js:236:11)
+67 error     at <anonymous>
