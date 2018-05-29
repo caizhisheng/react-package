@@ -1,0 +1,25 @@
+{
+  "name": "test-react-package",
+  "version": "1.0.0",
+  "description": "test-react-package",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caizhisheng/react-package.git"
+  },
+  "keywords": [
+    "test-react-package"
+  ],
+  "author": "mike",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/caizhisheng/react-package/issues"
+  },
+  "homepage": "https://github.com/caizhisheng/react-package#readme",
+  "devDependencies": {
+    "lerna": "^2.11.0"
+  }
+}
