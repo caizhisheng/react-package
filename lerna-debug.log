@@ -6,7 +6,7 @@
 5 silly isInitialized true
 6 silly existsSync D:\workplace\react-package\VERSION
 7 silly initialize attempt
-8 info current version 0.0.0
+8 info current version 1.0.0
 9 silly isDetachedHead
 10 silly getCurrentBranch
 11 verbose getCurrentBranch master
@@ -16,84 +16,88 @@
 15 silly getUpdates
 16 info Checking for updated packages...
 17 silly hasTags
-18 verbose hasTags false
-19 info Comparing with initial commit.
-20 verbose updated lerna-plugin-logs
-21 info Checking for prereleased packages...
-22 silly collectDependents
-23 silly isPackageDependentOf lerna-plugin-logs lerna-plugin-logs
-24 silly collectUpdates
-25 verbose has filtered update lerna-plugin-logs
-26 silly initialize success
-27 silly execute attempt
-28 silly addFile D:\workplace\react-package\lerna.json
-29 silly runScriptSync preversion test-react-package
-30 silly runScriptSync preversion lerna-plugin-logs
-31 silly runScriptSync version lerna-plugin-logs
-32 silly runScriptSync version test-react-package
-33 silly addFile D:\workplace\react-package\packages\lerna-plugin-logs\package.json
-34 silly commit v1.0.0-0
-35 verbose commit [ 'commit', '--no-verify', '-m', 'v1.0.0-0' ]
-36 silly addTag v1.0.0-0
-37 silly runScriptSync postversion lerna-plugin-logs
-38 silly runScriptSync postversion test-react-package
-39 info publish Publishing packages to npm...
-40 silly existsSync D:\workplace\react-package\packages\lerna-plugin-logs\scripts\prepublish.js
-41 verbose execScript No prepublish script found at D:\workplace\react-package\packages\lerna-plugin-logs\scripts\prepublish.js
-42 verbose publishing lerna-plugin-logs
-43 silly publishTaggedInDir latest lerna-plugin-logs
-44 silly getExecOpts { cwd: 'D:\\workplace\\react-package\\packages\\lerna-plugin-logs' }
-45 error publish Retrying failed publish: lerna-plugin-logs
-46 verbose publish error undefined
-47 verbose publishing lerna-plugin-logs
-48 silly publishTaggedInDir latest lerna-plugin-logs
-49 silly getExecOpts { cwd: 'D:\\workplace\\react-package\\packages\\lerna-plugin-logs' }
-50 error publish Retrying failed publish: lerna-plugin-logs
-51 verbose publish error undefined
-52 verbose publishing lerna-plugin-logs
-53 silly publishTaggedInDir latest lerna-plugin-logs
-54 silly getExecOpts { cwd: 'D:\\workplace\\react-package\\packages\\lerna-plugin-logs' }
-55 error publish Retrying failed publish: lerna-plugin-logs
-56 verbose publish error undefined
-57 verbose publishing lerna-plugin-logs
-58 silly publishTaggedInDir latest lerna-plugin-logs
-59 silly getExecOpts { cwd: 'D:\\workplace\\react-package\\packages\\lerna-plugin-logs' }
-60 error publish Retrying failed publish: lerna-plugin-logs
-61 verbose publish error undefined
-62 verbose publishing lerna-plugin-logs
-63 silly publishTaggedInDir latest lerna-plugin-logs
-64 silly getExecOpts { cwd: 'D:\\workplace\\react-package\\packages\\lerna-plugin-logs' }
-65 error publish Ran out of retries while publishing lerna-plugin-logs Error: Command failed: npm publish --tag latest
-65 error publish npm ERR! publish Failed PUT 404
-65 error publish npm ERR! code E404
-65 error publish npm ERR! 404 User not found : lerna-plugin-logs
-65 error publish npm ERR! 404
-65 error publish npm ERR! 404  'lerna-plugin-logs' is not in the npm registry.
-65 error publish npm ERR! 404 You should bug the author to publish it (or use the name yourself!)
-65 error publish npm ERR! 404
-65 error publish npm ERR! 404 Note that you can also install from a
-65 error publish npm ERR! 404 tarball, folder, http url, or git url.
-65 error publish
-65 error publish npm ERR! A complete log of this run can be found in:
-65 error publish npm ERR!     C:\Users\dell\AppData\Roaming\npm-cache\_logs\2018-05-29T02_11_25_311Z-debug.log
-65 error publish
-65 error publish     at Promise.all.then.arr (C:\Users\dell\AppData\Roaming\npm\node_modules\lerna\node_modules\execa\index.js:236:11)
-65 error publish     at <anonymous>
-65 error publish     at process._tickCallback (internal/process/next_tick.js:182:7)
-66 error execute callback with error
-67 error Error: Command failed: npm publish --tag latest
-67 error npm ERR! publish Failed PUT 404
-67 error npm ERR! code E404
-67 error npm ERR! 404 User not found : lerna-plugin-logs
-67 error npm ERR! 404
-67 error npm ERR! 404  'lerna-plugin-logs' is not in the npm registry.
-67 error npm ERR! 404 You should bug the author to publish it (or use the name yourself!)
-67 error npm ERR! 404
-67 error npm ERR! 404 Note that you can also install from a
-67 error npm ERR! 404 tarball, folder, http url, or git url.
-67 error
-67 error npm ERR! A complete log of this run can be found in:
-67 error npm ERR!     C:\Users\dell\AppData\Roaming\npm-cache\_logs\2018-05-29T02_11_25_311Z-debug.log
-67 error
-67 error     at Promise.all.then.arr (C:\Users\dell\AppData\Roaming\npm\node_modules\lerna\node_modules\execa\index.js:236:11)
-67 error     at <anonymous>
+18 verbose hasTags true
+19 silly getLastTag
+20 verbose getLastTag v1.0.0
+21 info Comparing with v1.0.0.
+22 silly diffSinceIn v1.0.0 packages/lerna-plugin-logs
+23 silly diff packages/lerna-plugin-logs/index.js
+24 verbose updated lerna-plugin-logs
+25 info Checking for prereleased packages...
+26 silly collectDependents
+27 silly isPackageDependentOf lerna-plugin-logs lerna-plugin-logs
+28 silly collectUpdates
+29 verbose has filtered update lerna-plugin-logs
+30 silly initialize success
+31 silly execute attempt
+32 silly addFile D:\workplace\react-package\lerna.json
+33 silly runScriptSync preversion test-react-package
+34 silly runScriptSync preversion lerna-plugin-logs
+35 silly runScriptSync version lerna-plugin-logs
+36 silly runScriptSync version test-react-package
+37 silly addFile D:\workplace\react-package\packages\lerna-plugin-logs\package.json
+38 silly commit v1.0.1
+39 verbose commit [ 'commit', '--no-verify', '-m', 'v1.0.1' ]
+40 silly addTag v1.0.1
+41 silly runScriptSync postversion lerna-plugin-logs
+42 silly runScriptSync postversion test-react-package
+43 info publish Publishing packages to npm...
+44 silly existsSync D:\workplace\react-package\packages\lerna-plugin-logs\scripts\prepublish.js
+45 verbose execScript No prepublish script found at D:\workplace\react-package\packages\lerna-plugin-logs\scripts\prepublish.js
+46 verbose publishing lerna-plugin-logs
+47 silly publishTaggedInDir latest lerna-plugin-logs
+48 silly getExecOpts { cwd: 'D:\\workplace\\react-package\\packages\\lerna-plugin-logs' }
+49 error publish Retrying failed publish: lerna-plugin-logs
+50 verbose publish error undefined
+51 verbose publishing lerna-plugin-logs
+52 silly publishTaggedInDir latest lerna-plugin-logs
+53 silly getExecOpts { cwd: 'D:\\workplace\\react-package\\packages\\lerna-plugin-logs' }
+54 error publish Retrying failed publish: lerna-plugin-logs
+55 verbose publish error undefined
+56 verbose publishing lerna-plugin-logs
+57 silly publishTaggedInDir latest lerna-plugin-logs
+58 silly getExecOpts { cwd: 'D:\\workplace\\react-package\\packages\\lerna-plugin-logs' }
+59 error publish Retrying failed publish: lerna-plugin-logs
+60 verbose publish error undefined
+61 verbose publishing lerna-plugin-logs
+62 silly publishTaggedInDir latest lerna-plugin-logs
+63 silly getExecOpts { cwd: 'D:\\workplace\\react-package\\packages\\lerna-plugin-logs' }
+64 error publish Retrying failed publish: lerna-plugin-logs
+65 verbose publish error undefined
+66 verbose publishing lerna-plugin-logs
+67 silly publishTaggedInDir latest lerna-plugin-logs
+68 silly getExecOpts { cwd: 'D:\\workplace\\react-package\\packages\\lerna-plugin-logs' }
+69 error publish Ran out of retries while publishing lerna-plugin-logs Error: Command failed: npm publish --tag latest
+69 error publish npm ERR! publish Failed PUT 404
+69 error publish npm ERR! code E404
+69 error publish npm ERR! 404 User not found : lerna-plugin-logs
+69 error publish npm ERR! 404
+69 error publish npm ERR! 404  'lerna-plugin-logs' is not in the npm registry.
+69 error publish npm ERR! 404 You should bug the author to publish it (or use the name yourself!)
+69 error publish npm ERR! 404
+69 error publish npm ERR! 404 Note that you can also install from a
+69 error publish npm ERR! 404 tarball, folder, http url, or git url.
+69 error publish
+69 error publish npm ERR! A complete log of this run can be found in:
+69 error publish npm ERR!     C:\Users\dell\AppData\Roaming\npm-cache\_logs\2018-05-29T03_05_01_824Z-debug.log
+69 error publish
+69 error publish     at Promise.all.then.arr (C:\Users\dell\AppData\Roaming\npm\node_modules\lerna\node_modules\execa\index.js:236:11)
+69 error publish     at <anonymous>
+69 error publish     at process._tickCallback (internal/process/next_tick.js:182:7)
+70 error execute callback with error
+71 error Error: Command failed: npm publish --tag latest
+71 error npm ERR! publish Failed PUT 404
+71 error npm ERR! code E404
+71 error npm ERR! 404 User not found : lerna-plugin-logs
+71 error npm ERR! 404
+71 error npm ERR! 404  'lerna-plugin-logs' is not in the npm registry.
+71 error npm ERR! 404 You should bug the author to publish it (or use the name yourself!)
+71 error npm ERR! 404
+71 error npm ERR! 404 Note that you can also install from a
+71 error npm ERR! 404 tarball, folder, http url, or git url.
+71 error
+71 error npm ERR! A complete log of this run can be found in:
+71 error npm ERR!     C:\Users\dell\AppData\Roaming\npm-cache\_logs\2018-05-29T03_05_01_824Z-debug.log
+71 error
+71 error     at Promise.all.then.arr (C:\Users\dell\AppData\Roaming\npm\node_modules\lerna\node_modules\execa\index.js:236:11)
+71 error     at <anonymous>

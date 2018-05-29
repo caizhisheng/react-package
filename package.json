@@ -1,6 +1,6 @@
 {
   "name": "test-react-package",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "test-react-package",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,7 @@
   "keywords": [
     "test-react-package"
   ],
-  "author": "mike",
+  "author": "mike-ccc",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/caizhisheng/react-package/issues"
