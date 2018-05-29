@@ -1,6 +1,6 @@
 {
   "name": "lerna-plugin-logs",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "lerna-plugin-logs",
   "main": "index.js",
   "scripts": {
