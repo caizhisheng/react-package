@@ -1,4 +1,4 @@
 module.exports = function(agrs) {
-    console.log(444);
+    console.log(666);
     console.log(agrs);      
 }
